@@ -1,0 +1,76 @@
+.formbuilder-wrapper .form-wrap.form-builder .frmb.stage-wrap{
+    border: 3px dashed #ccc;
+    padding: 10px;
+}
+
+.formbuilder-wrapper .icon-kendoMaskedInput:before,
+.formbuilder-wrapper .icon-kendoDateRangePicker:before
+{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 1em;
+    margin-left: .2em;
+    text-align: center;
+    width: 1em;
+    display: inline-block;
+}
+
+.formbuilder-wrapper .icon-kendoMaskedInput:before{
+    content: "\f09d";
+}
+.formbuilder-wrapper .icon-kendoDateRangePicker:before{
+    content: "\f271";
+}
+
+@media (max-width: 481px) {
+    .formbuilder-wrapper .form-wrap.form-builder .stage-wrap {
+        width: calc(100% - 45px);
+    }
+    .formbuilder-wrapper .form-wrap.form-builder .cb-wrap {
+        width: 40px;
+    }
+    .formbuilder-wrapper .form-wrap.form-builder .frmb-control li::before {
+        font-size: 15px;
+    }
+}
+
+/* frontend render styles */
+.formbuilder-render .formbuilder-checkbox, .formbuilder-render .formbuilder-radio,
+.formbuilder-render .formbuilder-checkbox-inline, .formbuilder-render .formbuilder-radio-inline {
+    margin-right: 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.formbuilder-render .formbuilder-checkbox, .formbuilder-render .formbuilder-radio {
+    display: flex;
+}
+
+.formbuilder-render .other-val{
+    font-weight: 100;
+    font-family: RetinaNarrow;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(33, 37, 41, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formbuilder-render .formbuilder-checkbox input, .formbuilder-render .formbuilder-radio input,
+.formbuilder-render .formbuilder-checkbox-inline input, .formbuilder-render .formbuilder-radio-inline input{
+    margin-right: 0.3rem;
+}
+.formbuilder-render .formbuilder-checkbox input, .formbuilder-render .formbuilder-radio label input,
+.formbuilder-render .formbuilder-checkbox-inline input, .formbuilder-render .formbuilder-radio-inline label input{
+    margin-left: 0.3rem;
+}
+
+.formbuilder-render .formbuilder-checkbox label, .formbuilder-render .formbuilder-radio label,
+.formbuilder-render .formbuilder-checkbox-inline label, .formbuilder-render .formbuilder-radio-inline label{
+    margin: 0;
+    cursor: pointer;
+}

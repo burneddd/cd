@@ -1,0 +1,55 @@
+.formUploadCropper-wrapper{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.formUploadCropper-wrapper .img-reference-clear{
+    font-size: 16px;
+    color: #000;
+    position: absolute;
+    z-index: 5;
+    right: -5px;
+    top: -5px;
+    display: none;
+}
+.formUploadCropper-wrapper .img-reference{
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+.formUploadCropper-wrapper .img-reference-empty{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    font-size: 30px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.formUploadCropper-wrapper .formUploadCropper-inner{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cccc;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.formUploadCropper-wrapper .formUploadCropper-hidden{
+    position: absolute;
+    width:100%;
+    height:100%;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
